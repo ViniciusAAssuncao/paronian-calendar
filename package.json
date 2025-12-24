@@ -1,0 +1,29 @@
+{
+  "name": "hadab-calendar-api",
+  "version": "1.0.0",
+  "description": "API completa do Calendário Paroniano/Hadabiano com precisão astronômica",
+  "main": "src/worker.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:prod": "wrangler deploy --env production",
+    "tail": "wrangler tail",
+    "test": "node test/calendar-tests.js",
+    "kv:create": "wrangler kv:namespace create CALENDAR_DATA_CACHE",
+    "kv:create:prod": "wrangler kv:namespace create CALENDAR_DATA_CACHE --env production"
+  },
+  "keywords": [
+    "calendar",
+    "hadab",
+    "paronia",
+    "astronomy",
+    "cloudflare-workers",
+    "serverless"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.54.0"
+  }
+}

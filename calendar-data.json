@@ -1,0 +1,132 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-12-24T00:00:00Z",
+  "specialYears": {
+    "2025": {
+      "status": "lost",
+      "name": "Ano Perdido",
+      "designation": "Perdido",
+      "description": "Ano Incorrido de péssimo augúrio. Ano declarado perdido pela comunidade místico-esotérica devido à intensidade de Ruach Ra'ah.",
+      "liturgical": "Ano de Lamento",
+      "auguries": ["negative", "dark", "trial"],
+      "recommendation": "Evitar referências diretas. Usar eufemismos."
+    },
+    "2026": {
+      "status": "current",
+      "name": "Ano da Vigilância",
+      "designation": "Vigilância",
+      "description": "Ano de transição após o Ano Perdido. Vigilância espiritual intensificada.",
+      "liturgical": "Ano de Renovação Cautelosa",
+      "auguries": ["neutral", "watchful", "transition"]
+    },
+    "2027": {
+      "status": "blessed",
+      "name": "Ano de Colheita Espiritual",
+      "designation": "Colheita",
+      "description": "Ano de graça abundante esperada. Sinais indicam possível Ano Eucarístico de profundidade ímpar.",
+      "liturgical": "Ano Eucarístico",
+      "auguries": ["positive", "grace", "abundance", "harvest"],
+      "recommendation": "Expectativa orante com vigilância contra complacência."
+    }
+  },
+  "holidays": [
+    {
+      "name": "Dia da Transfiguração",
+      "month": "Helkatom",
+      "day": 1,
+      "type": "major",
+      "recurring": true,
+      "description": "Celebração do início do Árion de Nova Ërda. Coincide com o periélio."
+    },
+    {
+      "name": "Festa de Quíro",
+      "month": "Nûle",
+      "day": 10,
+      "type": "major",
+      "recurring": true,
+      "description": "Celebração durante o afélio. Dia de reflexão sobre a luz divina na distância."
+    },
+    {
+      "name": "Renovação Atmosférica",
+      "month": "Frostûle",
+      "day": 8,
+      "type": "seasonal",
+      "recurring": true,
+      "description": "Início do Nodper. Preparação para o novo ciclo anual."
+    }
+  ],
+  "liturgicalCycle": {
+    "pentala": {
+      "description": "As cinco vias de purificação para união com o Divino",
+      "stages": [
+        "Via Purgativa",
+        "Via Iluminativa",
+        "Via Unitiva",
+        "Via Transformativa",
+        "Via Deificante"
+      ]
+    },
+    "mystikoi": {
+      "description": "Homens e mulheres reconhecidos por sensibilidade espiritual",
+      "role": "Percepção de augúrios e energias incriadas"
+    }
+  },
+  "arions": {
+    "erdaVelha": {
+      "name": "Árion da Ërda Velha",
+      "description": "Primeiro ciclo cósmico. Mundo Intermediário. Tempo da preparação.",
+      "duration": "~500,000 anos eriônicos",
+      "status": "concluded"
+    },
+    "novaErda": {
+      "name": "Árion de Nova Ërda",
+      "description": "Árion atual. Segundo Mundo. Reino de Quíro. Tempo da Salvação.",
+      "startedYearsAgo": "509,000-620,000 anos terrestres",
+      "status": "current",
+      "event": "Sopro Transfigurador"
+    }
+  },
+  "erions": {
+    "preEdic": {
+      "name": "Anos Hadabianos Pré-Édicos",
+      "duration": "~13,025 anos",
+      "description": "Aurora da humanidade no mundo transfigurado. Lutas contra resquícios da Ërda Velha.",
+      "characteristics": ["sombras", "invasões enswýrianas", "consciência embrionária"]
+    },
+    "edic": {
+      "name": "Anos Hadabianos Édicos",
+      "suffix": "AHE",
+      "duration": "~13,025 anos",
+      "timeMultiplier": 3,
+      "description": "Era de Ouro. Era das Dinastias. Ordem, paz e proximidade com o sagrado.",
+      "characteristics": ["civilização consciente", "densidade espiritual", "percepção atemporal"]
+    },
+    "ancient": {
+      "name": "Anos Hadabianos Antigos",
+      "suffix": "AHA",
+      "duration": "~13,025 anos",
+      "description": "Transição e decadência espiritual. Inverno da Fé.",
+      "characteristics": ["memória esvaída", "secularização", "ritualismo"]
+    },
+    "current": {
+      "name": "Anos Hadabianos",
+      "suffix": "AH",
+      "duration": "~13,025 anos",
+      "description": "Presente contínuo. Campo de batalha e graça. Responsabilidade espiritual do agora.",
+      "status": "ongoing"
+    }
+  },
+  "theology": {
+    "twoWorlds": {
+      "intermediate": "Ërda Velha - Mundo da distância ontológica",
+      "second": "Nova Ërda - Mundo transfigurado, Reino de Quíro"
+    },
+    "crossSolar": "União espiritual entre Hadab e Ermehain (Terra da Vida Real)",
+    "inCreatedEnergies": "Energias divinas que se manifestam nos eventos mundanos"
+  },
+  "meta": {
+    "updateFrequency": "Pode ser atualizado quando novos augúrios forem identificados",
+    "authority": "Comunidade místico-esotérica alinhada com a Pentala",
+    "caution": "Percepção humana é falível. O Diabo pode forjar augúrios de luz."
+  }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relógio Hadabiano</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 320px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #e9ecef;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #0f3460;
+      padding-bottom: 12px;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      color: #e94560;
+      margin-bottom: 4px;
+    }
+
+    .header .subtitle {
+      font-size: 11px;
+      color: #a8b2d1;
+    }
+
+    .time-display {
+      background: rgba(15, 52, 96, 0.4);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      border: 1px solid #0f3460;
+    }
+
+    .time {
+      font-size: 32px;
+      font-weight: 700;
+      color: #e94560;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 2px;
+    }
+
+    .date {
+      font-size: 14px;
+      color: #e9ecef;
+      margin-top: 8px;
+    }
+
+    .weekday {
+      font-size: 12px;
+      color: #a8b2d1;
+      margin-top: 4px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .info-card {
+      background: rgba(15, 52, 96, 0.3);
+      border-radius: 8px;
+      padding: 10px;
+      border: 1px solid #0f3460;
+    }
+
+    .info-card .label {
+      font-size: 10px;
+      color: #a8b2d1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .info-card .value {
+      font-size: 13px;
+      color: #e9ecef;
+      font-weight: 600;
+    }
+
+    .special-year {
+      background: rgba(233, 69, 96, 0.15);
+      border: 1px solid #e94560;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .special-year .status {
+      font-size: 11px;
+      color: #e94560;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .evriom-badge {
+      background: linear-gradient(135deg, #e94560 0%, #f77062 100%);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 20px;
+      color: #a8b2d1;
+    }
+
+    .error {
+      background: rgba(233, 69, 96, 0.2);
+      border: 1px solid #e94560;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+      color: #e94560;
+      font-size: 12px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 10px;
+      color: #6c757d;
+      padding-top: 12px;
+      border-top: 1px solid #0f3460;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Calendário Hadabiano</h1>
+      <div class="subtitle">Tempo de Nova Ërda</div>
+    </div>
+
+    <div id="content" class="loading">Sincronizando...</div>
+
+    <div class="footer">
+      API: <span id="api-status">●</span>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const API_URL = 'https://hadab-calendar-api.workers.dev';
+const API_URL = 'https://hadab-calendar-api.hadab.workers.dev';
 
 chrome.runtime.onInstalled.addListener(() => {
   console.log('Hadab Calendar Extension installed');

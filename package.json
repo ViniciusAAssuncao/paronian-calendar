@@ -10,8 +10,8 @@
     "deploy:prod": "wrangler deploy --env production",
     "tail": "wrangler tail",
     "test": "node test/calendar-tests.js",
-    "kv:create": "wrangler kv:namespace create CALENDAR_DATA_CACHE",
-    "kv:create:prod": "wrangler kv:namespace create CALENDAR_DATA_CACHE --env production"
+    "kv:create": "wrangler kv namespace create CALENDAR_DATA_CACHE",
+    "kv:create:prod": "wrangler kv namespace create CALENDAR_DATA_CACHE --env production"
   },
   "keywords": [
     "calendar",
